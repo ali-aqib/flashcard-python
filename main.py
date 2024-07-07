@@ -45,7 +45,7 @@ def flip_card():
 
 
 def is_known():
-    """Remove the current word if ✅ button clicked."""
+    """Remove the current word from french_word.csv if ✅ button clicked."""
     # Remove word from to_lean dictionary
     to_learn.remove(current_card)
     data = pandas.DataFrame(to_learn)
