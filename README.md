@@ -10,9 +10,9 @@
 
 ### Working of the project
 - File french_words.csv in data folder contains 101 common French words with their English meaning.
-![Screenshot](./data/Screenshotfront.png)
+- ![Screenshot](./images/Screenshotfront.png)
 - A random French word will show up on the flashcard upon running the program.
-![Screenshot](./data/Screenshotback.png)
+- ![Screenshot](./images/Screenshotback.png)
 - After 3 seconds, flashcard flips to show the English meaning.
 - If user clicks ✅ button then it means the user knows the meaning of the displayed French word and that will not appear again.
 - If user clicks ❌ button, this signifies that the user does not know the meaning of the displayed French word and that word will appear again.
