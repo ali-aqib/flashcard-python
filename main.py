@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter import messagebox
 import pandas
 from random import choice
 BACKGROUND_COLOR = "#B1DDC6"

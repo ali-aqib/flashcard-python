@@ -5,7 +5,7 @@
 ### Steps to run the project
 1. Install python 3.12
 2. Open project in the python IDE
-3. Install panda module
+3. Install pandas module
 4. Run the project
 
 ### Working of the project
