@@ -1,10 +1,12 @@
 from tkinter import *
+from tkinter import messagebox
 import pandas
 from random import choice
 BACKGROUND_COLOR = "#B1DDC6"
 
 current_card = {}
 to_learn = {}
+
 
 try:
     # Reading csv file
@@ -15,6 +17,7 @@ except FileNotFoundError:
     to_learn = original_data.to_dict(orient="records")
 else:
     to_learn = data.to_dict(orient="records")
+
 
 
 def next_card():
@@ -45,7 +48,7 @@ def flip_card():
 
 
 def is_known():
-    """Remove the current word from french_word.csv if ✅ button clicked."""
+    """Remove the current word from French word dictionary(to_learn) if ✅ button clicked."""
     # Remove word from to_lean dictionary
     to_learn.remove(current_card)
     data = pandas.DataFrame(to_learn)
@@ -84,7 +87,7 @@ button_known = Button(image=image_right, highlightthickness=0, bg=BACKGROUND_COL
 button_unknown.grid(row=1, column=0)
 button_known.grid(row=1, column=1)
 
-# Calling next_card function to generate the first French word
+# Calling next_card function to generate the first French word.
 next_card()
 
 window.mainloop()
